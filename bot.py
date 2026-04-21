@@ -94,13 +94,22 @@ async def start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
             pass
 
     # ── Foydalanuvchini DBga yozish ────────────────────────────
-    already_exists = db.get_user(user_id) is not None
-    db.add_user(
-        user_id   = user_id,
-        username  = user.username or "",
-        full_name = user.full_name,
-        referred_by = referrer_id,
-    )
+# ── Foydalanuvchini DBga yozish ────────────────────────────
+already_exists = db.get_user(user_id) is not None
+db.add_user(
+    user_id   = user_id,
+    username  = user.username or "",
+    full_name = user.full_name,
+    referred_by = referrer_id,
+)
+
+# ── ALWAYS tekshirish, har safar /start bosganida ───────────
+# (hatto reward olgan bo'lsa ham, agar kanaldan chiqsa qayta tekshir)
+membership = await check_membership(ctx.bot, user_id)
+
+if all(membership):
+    await send_referral_message(update, ctx)
+    return  # <-- Exit here if all channels OK
 
     # ── Referralni qayd etish va taklif qilganga xabar ─────────
     if referrer_id and not already_exists:
