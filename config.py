@@ -10,17 +10,17 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 #    Kanal ID ni qanday topish: pastdagi README ga qarang
 REQUIRED_CHANNELS = [
     {
-        "id": -1003998098831,          # <-- kanal ID (manfiy son)
+        "id": -1003998098831,  # <-- kanal ID (manfiy son)
         "link": "https://t.me/+ejBT7_TK4oZhZmVi",
         "name": "Kanal 3",
     },
     {
-        "id": -1003979529915,          # <-- kanal ID
+        "id": -1003979529915,  # <-- kanal ID
         "link": "https://t.me/+QIwOlZTn-hxhOWEy",
         "name": "Kanal 2",
     },
     {
-        "id": -1003950616100,          # <-- kanal ID
+        "id": -1003950616100,  # <-- kanal ID
         "link": "https://t.me/+8i6gEFq-ZcpjMjAy",
         "name": "Kanal 1",
     },
