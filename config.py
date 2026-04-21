@@ -1,9 +1,9 @@
 # ============================================================
 #  config.py  —  Bot sozlamalari (faqat shu faylni o'zgartiring)
 # ============================================================
+import os
 
-# 1. @BotFather dan olgan token
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 # 2. Majburiy kanallar
 #    id  →  bot admin bo'lishi kerak bo'lgan kanal ID
