@@ -27,7 +27,7 @@ REQUIRED_CHANNELS = [
 ]
 
 # 3. Oxirida yuboriladigan kanal linki
-FINAL_CHANNEL_LINK = "https://t.me/Welcome_toHell_z"
+FINAL_CHANNEL_LINK = "https://t.me/+sn2GKZ-oZX9lM2Qy"
 
 # 4. Nechta do'st taklif qilish kerak
 REFERRAL_REQUIRED = 3
