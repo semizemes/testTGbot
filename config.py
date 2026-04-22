@@ -15,8 +15,8 @@ REQUIRED_CHANNELS = [
         "name": "Kanal 3",
     },
     {
-        "id": -1003979529915,  # <-- kanal ID
-        "link": "https://t.me/+QIwOlZTn-hxhOWEy",
+        "id": -1001989513167,  # <-- kanal ID
+        "link": "https://t.me/Dilbarkhon_Mansurovna",
         "name": "Kanal 2",
     },
     {
